@@ -1,0 +1,51 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+body{
+  font-size: 20px;
+  margin: auto;
+  width: 20%;
+  border: 1px salmon solid;
+  height: 250px;
+  font-family: "Microsoft YaHei" ! important;
+  ul,li{
+    list-style: none;
+//    label{
+//      background-color: #003966;
+//    }
+  }
+  #menu{
+    background-color: #62072d;
+  }
+  #menu li{
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+//    background-color: #ff0000;
+    .tabFocus{
+      width: 50px;
+      font-weight: bold;
+      background-color: #003966;
+      border: 1px yellow solid;
+//      z-index: 100;
+      position: relative;
+    }
+  }
+  #content{
+//    @include inline-block;
+//    @include clearfix;
+    clear: left;
+    position: relative;
+    top: -1px;
+    li{
+      display: none;
+    }
+    .conFocus{
+      display: block;
+    }
+  }
+}
